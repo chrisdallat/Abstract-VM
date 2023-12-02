@@ -11,6 +11,7 @@ series of instructions, with one instruction per line. MyAbstractVM language has
 which is a major difference from the others assembly languages.
 
 ## Description
+```
 * comments: Comments start with a ';' and finish with a newline. A comment can be either at the start of a line, or after an instruction.
 
 * push 'type'('value'): Stacks the value v at the top of the stack.
@@ -43,6 +44,7 @@ Moreover if the divisor is equal to 0, the program execution must stop with an e
 * print: Verifies that the value at the top of the stack is an 8 bits integer. (If not, see the instruction assert), then interprets it as an ASCII value and displays the corresponding character on the standard output.
 
 * exit: Terminate the execution of the current program. If this instruction does not appears while all others instruction has been processes, the execution must stop with an error.
+```
 
 For non commutative operations, you must consider for the following stack: v1 on v2, the calculation in infix notation: v2 op v1.
 
